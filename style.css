@@ -1,0 +1,107 @@
+/* Fundo da página com gradiente */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #e0eafc, #cfdef3);
+}
+
+/* Cabeçalho fixo */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgba(0, 51, 102, 0.9);
+  color: black;
+  text-align: center;
+  padding: 20px 10px;
+  z-index: 1000;
+}
+
+header h1 {
+  margin: 0;
+}
+
+header p {
+  margin: 5px 0 15px;
+}
+
+/* Menu de navegação */
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+/* Efeito hover no menu */
+nav a:hover {
+  background-color: #003366;
+  color: #f0f0f0;
+}
+
+/* Espaçamento para não sobrepor o conteúdo pelo header fixo */
+main {
+  padding-top: 180px;
+}
+
+/* Seções com fundo e cantos arredondados */
+section {
+  background-color: #ffffffdd;
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 800px;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+
+/* Animação de translação */
+section:hover {
+  transform: translateY(-5px);
+}
+
+/* Imagens com animação de aumento */
+section img {
+  max-width: 100%;
+  border-radius: 10px;
+  transition: 0.3s ease;
+}
+
+section img:hover {
+  transform: scale(1.05);
+}
+
+/* Redes sociais */
+.redes a {
+  display: inline-block;
+  margin: 10px;
+  text-decoration: none;
+  color: #003366;
+  padding: 8px 16px;
+  border: 1px solid #003366;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.redes a:hover {
+  background-color: #003366;
+  color: white;
+}
+
+/* Rodapé */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(0, 51, 102, 0.9);
+  color: green;
+  margin-top: 50px;
+}
